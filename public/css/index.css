@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Itim&display=swap");
+
+.navbar {
+  transition: 1s;
+  font-size: 15px;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  /* height: 90px; */
+  width: 100%;
+  z-index: 100;
+}
+
+.active-navbar {
+  background-color: black;
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+}
+.hamburger {
+  display: none;
+}
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+.home {
+  height: 100vh;
+}
+.home::after {
+  content: "";
+  background-image: url("../images/cover2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* filter: blur(3px); */
+  z-index: -1;
+}
+
+#owner {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  box-shadow: 0px 0px 10px black;
+  flex-direction: column;
+
+  z-index: 1;
+}
+.services {
+  /* text-align: center; */
+  flex-direction: column;
+  padding: 10px 0px;
+  min-height: 100vh;
+}
+.card {
+  text-align: center;
+  margin: 30px 0px;
+  height: 25rem;
+  width: 15rem;
+  padding: 5px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.menu {
+  min-height: 100vh;
+  /* background-color: beige; */
+  flex-direction: column !important;
+}
+table {
+  height: 50vh;
+  text-align: center;
+  padding: 10px;
+  width: 80vw;
+}
+th {
+  background-color: black;
+  color: white !important;
+}
+td,
+th {
+  font-weight: bolder;
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+#contact {
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 100;
+  background-image: url(../images/contactbg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+#contact form {
+  background-color: rgba(255, 255, 255, 0.171);
+  padding: 50px;
+  box-shadow: 0px 0px 10px balck;
+  flex-direction: column;
+}
+#contact form div input,
+textarea {
+  outline: none;
+  font-weight: bolder;
+  background: none;
+  margin: 5px 10px;
+  width: 50vw;
+  min-height: 30px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+footer {
+  font-size: 15px;
+  padding: 20px;
+  background-image: url(../images/foot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  flex-direction: column !important;
+  z-index: -1;
+}
+footer i {
+  color: white;
+  font-size: 15px !important;
+}
+.box {
+  flex-direction: column;
+}
+footer .box div {
+  margin: 20px;
+}
+footer .box div span {
+  padding: 20px;
+}
+.fa-heart {
+  font-size: 20px !important;
+  color: red;
+}
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .logo {
+    position: relative;
+    top: 0px;
+    right: 10px;
+  }
+}

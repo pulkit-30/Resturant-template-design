@@ -1,0 +1,17 @@
+.typewrite::after {
+  content: "love";
+  position: relative;
+  color: #ffd1b9;
+  animation-name: typewriter;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typewriter {
+  0% {
+    content: "Love";
+  }
+  50% {
+    content: "Taste";
+  }
+}
